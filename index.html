@@ -1,12 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Realjob</title>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- J-LESS -->
+    <script src="assets/js/j-less.js"></script>
+
+    <!-- Own Files -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/main.js"></script>
 </head>
+
 <body>
-    
+    <!-- APP -->
+    <section id="homepage" class="swiper-container">
+        <header id="homepage-header">
+            <button id="btn-homepage-drawer">
+                <i class="material-icons">menu</i>
+            </button>
+            <nav id="homepage-drawer" class="drawer">
+                <div class="drawer-content">
+                    <button id="btn-homepage-close-drawer" class="btn-close-drawer">
+                        <i class="material-icons">add</i>
+                    </button>
+                    <div class="drawer-list">
+                        <a id="btn-sign-in" class="drawer-list-item">Entrar</a>
+                        <a id="btn-about-us" class="drawer-list-item">Sobre Nós</a>
+                        <a id="btn-about-project"class="drawer-list-item">Projeto</a>
+                        <a class="drawer-list-item">Contato</a>
+                    </div>
+                    <div class="drawer-footer">
+                        <img src="assets/icons/facebook-logo.png" alt="">
+                        <img src="assets/icons/instagram-logo.png" alt="">
+                        <img src="assets/icons/youtube-logo.png" alt="">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="swiper-wrapper">
+            <div id="mainslide" class="swiper-slide">
+                <img id="mainslide-float-logo" class="float-logo" src="assets/img/logo-white.png">
+                <div id="mainslide-content">
+                    <p>Nós acreditamos que
+                        <br> todos podem
+                        <br> trabalhar
+                        <br> com o que
+                        <br> amam.</p>
+                </div>
+                <div id="mainslide-footer">
+                    <div>
+                        <a href="pages/sign/sign-in.html" id="btn-start-journey">Iniciar Jornada</a>
+                    </div>
+                    <footer>
+                        <img src="assets/img/drag-to-know-more.png">
+                    </footer>
+                </div>
+
+            </div>
+            <div id="about-us-slide" class="swiper-slide">
+                <img id="about-us-float-logo" class="float-logo" src="assets/img/logo-white.png">
+                <div id="about-us-content">
+                    <h2 id="about-us-title">Sobre Nós</h2>
+                    <div id="about-us-description-container">
+                        <h2 id="about-us-title-description">Somos uma startup criada para auxiliar o descobrimento e desenvolvimento de carreiras para jovens
+                            e adultos</h2>
+                        <p id="about-us-description">Ajudamos as pessoas em uma jornada de autodescobrimento, direcionamento, qualificação e encaminhamento
+                            para o primeiro estágio. Focamos sempre em direcionar o usuário à carreira que lhe traga satisfação
+                            e felicidade.</p>
+                    </div>
+                    <button id="btn-about-us-video">Vídeo de Apresentação</button>
+                </div>
+            </div>
+            <div id="about-project-1" class="swiper-slide">
+                <img id="about-project-1-float-logo" class="float-logo" src="assets/img/logo-white.png">
+                <div id="about-project-1-content">
+                    <h2>Passo a passo do projeto</h2>
+                    <div class="box-content">
+                        <h3>1 - Passe por um teste interativo</h3>
+                        <span>Responda perguntas sobre seus gostos, habilidade e personalidade;</span>
+                    </div>
+                    <div class="box-content">
+                        <h3>2 - Com base nos resultados</h3>
+                        <span>Descubra 4 carreiras que tem tudo a ver com o seu perfil;</span>
+                    </div>
+                    <div class="box-content">
+                        <h3>3 - Faça uma imersão</h3>
+                        <span>Veja vídeos de profissionais da carreira direcionada à você. Tire dúvidas e entenda melhor como seria
+                            ser um profissional da área;</span>
+                    </div>
+                </div>
+            </div>
+            <div id="about-project-2" class="swiper-slide">
+                <img id="about-project-2-float-logo" class="float-logo" src="assets/img/logo-white.png">
+                <div id="about-project-2-content">
+                    <h2>4- Mãos na massa</h2>
+                    <div class="box-content">
+                        <h3>Curtiu uma das profissões ou ainda tem dúvidas?</h3>
+                        <span>Após passar pela fase de descobrimento, participe de eventos online e presenciais que refletem desafios
+                            reais da carreira escolhida.</span>
+                    </div>
+                    <a href="pages/events/events.html">Eventos que já rolaram</a>
+                </div> 
+            </div>
+            
+            <div id="about-project-3" class="swiper-slide">
+                <img id="about-project-3-float-logo" class="float-logo" src="assets/img/logo-white.png">
+                <div id="about-project-3-content">
+                    <h2>5 - Direcionamento</h2>
+                    <div class="box-content">
+                        <h3>Você não vai só encontrar a carreira perfeita, nós te direcionamos para a especialização!</h3>
+                        <span>Depois de passar por todas as fases você ainda vai ganhar descontos em cursos. Nosso parceiros são
+                            instituições com qualidade de ensino excelente e, com isso, você vai poder se especializar na
+                            área escolhida e sair preparado para o mercado de trabalho.</span>
+                    </div>
+                    <a>Instituições Parceiras</a>
+                </div>
+            </div>
+            <div id="about-project-4" class="swiper-slide">
+                <img id="about-project-4-float-logo" class="float-logo" src="assets/img/logo-white.png">
+                <div id="about-project-4-content">
+                    <h2>6 - Score</h2>
+                    <div id="container-1">
+                        <h3>Conquiste pontos ao completar as fases e participar de cursos</h3>
+                        <img src="assets/img/profile-photo.png">
+                    </div>
+                    <div id="container-2">
+                        <span>Todas as fases que você completar irão lhe garantir pontos. Fazer os cursos recomendados ou estar
+                            no ensino superior dão as pontuaçções mais altas. Esses pontos serão mega importantes para a
+                            fase 7.</span>
+                    </div>
+                    <div id="container-3">
+                        <img src="assets/img/trophy.png">
+                        <h3>Seja o líder do ranking da sua carreira</h3>
+                    </div>
+                    <div id="container-4">
+                        <span>Os ranking são separados por carreira, se qualifique com cursos para ser o líder</span>
+                    </div>
+                </div>
+            </div>
+            <div id="about-project-5" class="swiper-slide">
+                <img id="about-project-5-float-logo" class="float-logo" src="assets/img/logo-white.png">
+                <div id="about-project-5-content">
+                    <h2>7 - Vagas de Estágio</h2>
+                    <div class="box-content">
+                        <h3>Quanto mais pontos, mais chances de conseguir uma vaga de estágio.</h3>
+                        <span>Após concluir todas as fases você poderá concorrer a vagas de estagio de acordo com a carreira que
+                            você mais se identificar. Se qualifique para ter mais chances.</span>
+                    </div>
+                    <a>Empresas Parceiras</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

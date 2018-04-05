@@ -1,0 +1,454 @@
+*{
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*------------------------ INDEX.HTML ------------------------*/
+.swiper-slide{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ########### All Slides ############ */
+.float-logo{
+    position: absolute;
+    width: 80px;
+    padding: 10px;
+}
+#homepage-header{
+    width: 5vh;
+    z-index: 10;
+    position: absolute;
+    
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 30px;
+}
+#homepage-header > button{
+    font-size: 30px;
+    color: white;
+    border: none;
+    background: rgba(0, 0, 0, 0.6);
+}
+.drawer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+}
+
+.drawer.drawer-show{
+    transform: translateX(0);
+}
+
+.drawer-content{
+    background: white;
+    width: 80vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-close-drawer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #eee;
+    background: #B71C1C ;
+    border: none;
+    border-radius: 50px;
+    transform: rotate(45deg);
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+}
+
+.drawer-footer{
+    text-align: center;
+    background-color: #74b851;
+    padding: 50px 20px;
+}
+
+.drawer-footer > img{
+    width: 20%;
+    margin: 10px;
+}
+
+.drawer-list-item{
+    display: block;
+    text-transform: uppercase;
+    color: #74b851;
+    font-weight: bolder;
+    text-align: center;
+    margin: 60px 0;
+}
+
+
+/* ########### Main Slide ############ */
+#mainslide{
+    background-size: cover;
+    background-image: url("../img/bg-mainslide.jpg");
+    border: 15px solid #74b851;
+}
+
+#mainslide-float-logo{
+    background: #74b851;
+}
+
+#mainslide-content, 
+#mainslide-footer{
+    display: flex;
+}
+
+#mainslide-content{
+    height: 70vh;
+    overflow: auto;
+    flex-direction: row-reverse;
+}
+
+#mainslide-content > p{
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 70px;
+    margin-right: 20px;
+    text-shadow: 1px 0px 0px white, 
+                 -1px 0px 0px white, 
+                 0px 1px 0px white, 
+                 0px -1px 0px white;
+    font-size: 1.2em;
+    color: #74b851;
+}
+
+#mainslide-footer{
+    height: 25vh;
+    text-align: center;
+    
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#btn-start-journey{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #268a4c 0%, #0ac24a 100%);
+}
+
+#mainslide-footer > footer{
+    margin-top: 40px;
+}
+
+#mainslide-footer > footer > img{
+    width: 100%;
+}
+
+/* ########### About Us Slide ############ */
+#about-us-slide{
+    background-size: cover;
+    background-image: url("../img/bg-about-us.jpg");
+    border: 15px solid #52a283;
+}
+
+#about-us-float-logo{
+    background-color: #52a283;
+}
+
+#about-us-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 95vh;
+}
+
+#about-us-title{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 16pt;
+    color: #42a283;
+    background: white;
+    width: 60vw;
+    text-align: center;
+}
+
+#about-us-description-container{
+    padding: 10px;
+    background: rgba(66, 162, 131, .8);
+    color: white;
+    width: 85vw;
+}
+
+#about-us-title-description{
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+#about-us-description{
+    font-size: 12pt;
+}
+
+#btn-about-us-video{
+    background-color: white;
+    color: #42a283;
+    width: 100%;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 14pt;
+    border:none;
+    margin-top: 20px;
+}
+
+/* ########### About Project ############ */
+#about-project-1{
+    background-size: cover;
+    background-image: url("../img/bg-about-project-1.png");
+    border: 15px solid #6fd183;
+}
+
+#about-project-1-float-logo{
+    background: #6fd183;
+}
+
+#about-project-1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 95vh;
+}
+
+#about-project-1-content > h2{
+    background: #66ca81;
+    color: white;
+    width: 80vw;
+    font-size: 13pt;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#about-project-1-content > .box-content{
+    background: white;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+#about-project-1-content > .box-content > h3{
+    font-size: 13pt;
+    margin: 10px 0 5px 0;
+    color: #00913f;
+}
+
+#about-project-1-content > .box-content > span{
+    font-size: 11pt;
+    color: #69d47c;
+}
+
+#about-project-2{
+    background-size: cover;
+    background-image: url("../img/bg-about-project-2.jpg");
+    border: 15px solid #119a18;
+}
+
+#about-project-3{
+    background-size: cover;
+    background-image: url("../img/bg-about-project-3.png");
+    border: 15px solid #1fae5f;
+}
+
+#about-project-5{
+    background-size: cover;
+    background-image: url("../img/bg-about-project-5.jpg");
+    border: 15px solid #6cdeba;
+}
+
+#about-project-2-float-logo{
+    background: #119a18
+}
+
+#about-project-3-float-logo{
+    background: #1fae5f
+}
+
+#about-project-5-float-logo{
+    background: #6cdeba
+}
+#about-project-2-content,
+#about-project-3-content,
+#about-project-5-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 95vh;
+}
+
+#about-project-5-content{
+    align-items: flex-start !important;
+}
+
+#about-project-2-content > h2,
+#about-project-3-content > h2,
+#about-project-5-content > h2{
+    background: white;
+    width: 80vw;
+    font-size: 13pt;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#about-project-2-content > h2{
+    color: #119a18;
+}
+#about-project-3-content > h2{
+    color: #1fae5f;
+}
+
+#about-project-5-content > h2{
+    color: #6cdeba;
+}
+
+#about-project-2-content > .box-content,
+#about-project-3-content > .box-content,
+#about-project-5-content > .box-content{
+    color:white;
+    text-align: right;
+    padding: 20px;
+    width: 80vw;
+}
+#about-project-2-content > .box-content{
+    background: rgba(17, 154, 24, .8);
+}
+#about-project-3-content > .box-content{
+    background: rgba(31, 174, 95, .8);
+}
+
+#about-project-5-content > .box-content{
+    background: rgba(108, 222, 186, .9);
+    text-align: left;
+}
+
+#about-project-2-content > .box-content > h3,
+#about-project-3-content > .box-content > h3,
+#about-project-5-content > .box-content > h3{
+    font-size: 13pt;
+    margin: 10px 0 5px 0;
+}
+
+#about-project-2-content > .box-content > span,
+#about-project-3-content > .box-content > span,
+#about-project-5-content > .box-content > span{
+    font-size: 11pt;
+}
+
+#about-project-2-content > a,
+#about-project-3-content > a,
+#about-project-5-content > a{
+    width: 100%;
+    color: #119a18;
+    border: none;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    background: white;
+    font-weight: bolder;
+    margin-top: 50px;
+    text-decoration: none; 
+    
+}
+
+#about-project-4{
+    border: 15px solid #56b597;
+}
+
+#about-project-4-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 95vh;
+}
+
+#about-project-4-float-logo{
+    background: #56b597;
+}
+
+#about-project-4-content > h2{
+    background: #66bca1;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    width: 60vw;
+}
+
+#about-project-4-content > div{
+    width: 100%;
+}
+
+#container-1,
+#container-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-1 > img,
+#container-1 > h3,
+#container-3 > h3
+{
+    width: 50%;
+    margin: 0;
+    color: #048b5c;
+}
+
+#container-3 > img{
+    width: 40%;
+}
+
+
+#container-1 > h3
+#container-3 > h3{
+    color: #028d5a;
+}
+#container-1 > h3{
+    text-align: right;
+}
+
+#cotainer-3 > h3{
+    text-align: left;
+}
+
+#container-2,
+#container-4{
+    text-align: center;
+    color: #53b596;
+    padding: 10px;
+    font-size: 11pt;
+}

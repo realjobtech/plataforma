@@ -1,0 +1,116 @@
+/* =============== RESET =============== */
+*{
+    font-family: "Lato", sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* =============== BUTTONS =============== */
+.btn-primary{
+    background: #74b951;
+    color: #eee;
+    border: none;
+    font-size: 18px;
+}
+
+.btn-secondary{
+    background: #eee;
+    border: none;
+    color: #212121;
+    border: none;
+    font-size: 18px;
+}
+
+/* SIGN IN AND SIGN UP*/
+.page{
+    background: #212121;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+#page-sign-in,
+#page-sign-up{
+    flex-direction: column;
+    text-align: center;
+}
+
+#page-sign-up-content{
+    overflow: auto;
+}
+
+#page-sign-in-title,
+#page-sign-up-title{
+    color: #eee;
+}
+
+#page-sign-in hr,
+#page-sign-up hr{
+    border-color: #ccc;
+}
+
+#btn-sign-in-google > span > img,
+#btn-sign-in-facebook > span > img,
+#btn-sign-up-google > span > img,
+#btn-sign-up-facebook > span > img{
+    width: 18px;
+    height: auto;
+}
+
+#btn-sign-in-google, #btn-sign-in-facebook,
+#btn-sign-up-google, #btn-sign-up-facebook{
+    font-size: 18px;
+    width: 80%;
+    border: none;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+#btn-sign-in-google,
+#btn-sign-up-google{
+    color: #eee;
+    background: #df575d;
+}
+
+#btn-sign-in-facebook,
+#btn-sign-up-facebook{
+    background: #eee;
+    color: #212121
+}
+
+.page-sign-in-text,
+.page-sign-up-text{
+    color: #ccc;
+}
+
+#page-sign-in-form,
+#page-sign-up-form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#page-sign-in-form input, #page-sign-in-form button,
+#page-sign-in-form input, #page-sign-in-form #btn-register,
+#page-sign-up-form input, #page-sign-up-form button{
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+
+#page-sign-in-form input,
+#page-sign-up-form input{
+    background: transparent;
+    color: #eee;
+    border: 2px solid #74b951;
+}
