@@ -23,15 +23,19 @@
             </button>
             <p class="page-sign-in-text">Ou</p>
             <form id="page-sign-in-form">
-                <input type="email" placeholder="E-mail ou nome de usuário">
-                <input type="password" placeholder="Senha">
+                <input type="email" placeholder="E-mail ou nome de usuário" id="email-signin">
+                <input type="password" placeholder="Senha" id="password-signin">
                 <a id="page-sign-in-forgot" class="page-sign-in-text" href="#" align="left">Esqueci</a>
-                <button id="btn-sign-in" class="btn-primary" type="button">Entrar</button>
+                <button id="btn-sign-in" class="btn-primary" type="button" onclick="login()">Entrar</button>
                 <a href="sign-up.html" id="btn-register" class="btn-secondary">Cadastrar</a>
             </form>
             <img class="page-sign-in-logo" src="assets/img/full-logo.png">
         </div>
     </section>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>    
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

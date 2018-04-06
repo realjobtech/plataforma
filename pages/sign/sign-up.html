@@ -23,16 +23,20 @@
             </button>
             <p class="page-sign-up-text">Ou</p>
             <form id="page-sign-up-form">
-                <input type="text" placeholder="Nome de usuário">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
-                <input type="phone" placeholder="Whatsapp">
-                <input type="password" placeholder="Senha">
-                <input type="password" placeholder="Confirmar Senha">
-                <button id="btn-sign-up" class="btn-primary" type="button">Cadastrar</button>
+                <input type="text" placeholder="Nome de usuário" id="username-signup">
+                <input type="text" placeholder="Nome" id="name-signup">
+                <input type="email" placeholder="E-mail" id="email-signup">
+                <input type="phone" placeholder="Whatsapp" id="cellphone-signup">
+                <input type="password" placeholder="Senha" id="password-signup">
+                <input type="password" placeholder="Confirmar Senha" id="conf-password-signup">
+                <button id="btn-sign-up" class="btn-primary" type="button" onclick="Cadastro()">Cadastrar</button>
             </form>
         </div>
     </section>
+    
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
